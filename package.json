@@ -1,0 +1,17 @@
+{
+  "name": "custom-eslint-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests --recursive"
+  },
+  "keywords": [],
+  "author": "HH: Andrico Karoulla",
+  "license": "ISC",
+  "dependencies": {
+    "eslint": "^8.0.0",
+    "mocha": "^9.1.2",
+    "parse5": "^6.0.1"
+  }
+}
