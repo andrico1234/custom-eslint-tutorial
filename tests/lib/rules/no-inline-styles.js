@@ -9,7 +9,11 @@ const ruleTester = new RuleTester({
 });
 
 ruleTester.run("no-inline-styles", rule, {
-  valid: ['html`<div class="fake-name"></div>`', "html`<div></div>`"],
+  valid: [
+    'html`<div class="fake-name"></div>`',
+    "html`<div></div>`",
+    "styled`<div style=''></div>`",
+  ],
   invalid: [
     {
       code: 'html`<div style=""></div>`;',
