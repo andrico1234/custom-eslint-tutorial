@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha tests --recursive --watch"
+    "test": "mocha tests --recursive --watch",
+    "test:debug": "mocha tests --recursive --watch --inspect-brk"
   },
   "keywords": [],
   "author": "HH: Andrico Karoulla",
