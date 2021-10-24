@@ -32,7 +32,7 @@ ruleTester.run("no-inline-styles", rule, {
       ],
     },
     {
-      code: 'html`<div style="${val}""></div>`',
+      code: 'html`<div style="${val}"></div>`',
       errors: [
         {
           message: "no-inline-style",
