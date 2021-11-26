@@ -1,8 +1,6 @@
 import rule from "../../../lib/rules/no-inline-styles.js";
 import { RuleTester } from "eslint";
 
-console.log(rule)
-
 const ruleTester = new RuleTester({
   parserOptions: {
     sourceType: "module",
