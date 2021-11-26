@@ -1,5 +1,5 @@
-const rule = require("../../../lib/rules/no-inline-styles");
-const RuleTester = require("eslint").RuleTester;
+import rule from "../../../lib/rules/no-inline-styles.js";
+import { RuleTester } from "eslint";
 
 const ruleTester = new RuleTester({
   parserOptions: {
