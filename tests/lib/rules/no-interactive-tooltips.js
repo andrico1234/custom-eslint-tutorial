@@ -1,27 +1,28 @@
-// import rule from "../../../lib/rules/no-interactive-tooltips.js";
-// import { RuleTester } from "eslint";
-// import { html } from "@divriots/starter-simba";
-// import "@divriots/starter-simba/tooltip/simba-tooltip.js";
+import rule from "../../../lib/rules/no-interactive-tooltips.js";
+import { RuleTester } from "eslint";
 
-// const ruleTester = new RuleTester({
-//   parserOptions: {
-//     sourceType: "module",
-//     ecmaVersion: 2015,
-//   },
-// });
+import core from "@divriots/starter-simba/core/index.js";
+import "@divriots/starter-simba/tooltip/simba-tooltip.js";
 
-// ruleTester.run("no-interactive-tooltips", rule, {
-//   valid: [
-//     'html`<simba-tooltip><span slot="content"> Error! </span></simba-tooltip>`',
-//   ],
-//   invalid: [
-//     {
-//       code: "",
-//       errors: [
-//         {
-//           message: "",
-//         },
-//       ],
-//     },
-//   ],
-// });
+const ruleTester = new RuleTester({
+  parserOptions: {
+    sourceType: "module",
+    ecmaVersion: 2015,
+  },
+});
+
+ruleTester.run("no-interactive-tooltips", rule, {
+  valid: [
+    'html`<simba-tooltip><span slot="content"> Error! </span></simba-tooltip>`',
+  ],
+  invalid: [
+    {
+      code: "",
+      errors: [
+        {
+          message: "",
+        },
+      ],
+    },
+  ],
+});
