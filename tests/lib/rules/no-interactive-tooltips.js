@@ -1,9 +1,6 @@
 import rule from "../../../lib/rules/no-interactive-tooltips.js";
 import { RuleTester } from "eslint";
 
-import core from "@divriots/starter-simba/core/index.js";
-import "@divriots/starter-simba/tooltip/simba-tooltip.js";
-
 const ruleTester = new RuleTester({
   parserOptions: {
     sourceType: "module",
