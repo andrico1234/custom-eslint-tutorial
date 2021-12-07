@@ -7,9 +7,8 @@
     "test": "mocha tests --recursive",
     "test:debug": "mocha tests --recursive --inspect-brk"
   },
-  "type": "module",
   "keywords": [],
-  "author": "HH: Andrico Karoulla",
+  "author": "Andrico Karoulla",
   "license": "ISC",
   "dependencies": {
     "eslint": "^8.0.0",
