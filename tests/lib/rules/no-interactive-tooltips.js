@@ -1,5 +1,5 @@
-import rule from "../../../lib/rules/no-interactive-tooltips.js";
-import { RuleTester } from "eslint";
+const rule = require("../../../lib/rules/no-interactive-tooltips.js");
+const { RuleTester } = require("eslint");
 
 const ruleTester = new RuleTester({
   parserOptions: {
@@ -9,9 +9,7 @@ const ruleTester = new RuleTester({
 });
 
 ruleTester.run("no-interactive-tooltips", rule, {
-  valid: [
-    'html`<simba-tooltip><span slot="content"> Error! </span></simba-tooltip>`',
-  ],
+  valid: [],
   invalid: [
     {
       code: "",

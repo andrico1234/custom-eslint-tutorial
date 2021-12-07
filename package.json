@@ -4,10 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha tests --recursive",
+    "test": "mocha tests --recursive --watch",
     "test:debug": "mocha tests --recursive --inspect-brk"
   },
-  "type": "module",
   "keywords": [],
   "author": "HH: Andrico Karoulla",
   "license": "ISC",
