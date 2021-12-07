@@ -4,15 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha tests --recursive",
+    "test": "mocha tests --recursive --watch",
     "test:debug": "mocha tests --recursive --inspect-brk"
   },
-  "type": "module",
   "keywords": [],
-  "author": "HH: Andrico Karoulla",
+  "author": "Andrico Karoulla",
   "license": "ISC",
   "dependencies": {
-    "@divriots/starter-simba": "^0.3.2",
     "eslint": "^8.0.0",
     "mocha": "^9.1.2",
     "parse5": "^6.0.1"
