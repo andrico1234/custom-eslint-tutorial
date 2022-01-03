@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha tests --recursive --watch",
+    "test": "mocha tests/**/no-interactive-tooltips.js --recursive --watch",
     "test:debug": "mocha tests --recursive --inspect-brk"
   },
   "keywords": [],
