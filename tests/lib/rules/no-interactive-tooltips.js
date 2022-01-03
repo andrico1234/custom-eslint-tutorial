@@ -33,7 +33,7 @@ ruleTester.run("no-interactive-tooltips", rule, {
       ],
     },
     {
-      code: 'html`<simba-tooltip><span slot="content"><div tabindex={1}> Error! </div></span></simba-tooltip>`',
+      code: 'html`<simba-tooltip><span slot="content"><div tabindex="1"> Error! </div></span></simba-tooltip>`',
       errors: [
         {
           message: "no-interactive-tooltips",
@@ -41,7 +41,7 @@ ruleTester.run("no-interactive-tooltips", rule, {
       ],
     },
     {
-      code: 'html`<simba-tooltip><span slot="content"><div><div tabindex={1}> Error! </div><div></span></simba-tooltip>`',
+      code: 'html`<simba-tooltip><span slot="content"><div><div tabindex="1"> Error! </div><div></span></simba-tooltip>`',
       errors: [
         {
           message: "no-interactive-tooltips",
